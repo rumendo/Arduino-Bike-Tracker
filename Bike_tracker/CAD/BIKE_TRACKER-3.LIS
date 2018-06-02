@@ -1,0 +1,15 @@
+AutoECO Report
+FILE-A: C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER-1.MAX
+FILE-B: C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding package DHT11
+Adding component U5
+Net N06645 renamed to N06754
+Net N06175 renamed to N06179
+Net N001645 renamed to N2821337
+Net N06334 renamed to N06381
+Adding net N2824472
+Adding U5.2 to net 5V
+Adding U5.1 to net N07503
+*EOF*
+No errors found

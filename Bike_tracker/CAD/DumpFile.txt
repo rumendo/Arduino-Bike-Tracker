@@ -1,0 +1,21 @@
+Table Name = Resistor
+
+Fields
+ERJ-2GEJ472X
+Carbon Film
+4.7K
+Carbon Film Resistor 4.7K OHM 1/16W 5% 0402 SMD
+1/16W
+5%
+discrete\RESISTOR,SMALL R1,analog\R
+SM/R_0402
+smdres
+R
+ERJ-2GEJ472X
+Panasonic - SCD
+P4.7KJTR-ND
+Digi-Key
+0.02
+In Stock
+Res.pdf
+

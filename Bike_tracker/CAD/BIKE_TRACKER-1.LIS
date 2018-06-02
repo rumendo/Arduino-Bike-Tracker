@@ -1,0 +1,47 @@
+AutoECO Report
+FILE-A: C:\ORCAD\ORCAD_10.5\TOOLS\LAYOUT_PLUS\DATA\3BET_ANY.TCH
+FILE-B: C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding footprint SM/R_0402
+Adding footprint SIP\10P
+Found footprint AC300\100 from PRT file for original FP AC300/100, comp C2
+Adding footprint SIP\8P
+Adding footprint ARDUINO NANO
+Adding footprint SIP\4P
+Adding package R
+Adding package MPU_9265_0
+Adding package CAP_NP
+Adding package SD_CARD_0
+Adding package ARDUINO_NANO_0
+Adding package GPS_0
+Adding component R1
+Adding component U3
+Adding component C2
+Adding component R2
+Adding component C3
+Adding component U4
+Adding component C4
+Adding component U1
+Adding component C1
+Adding component U2
+Adding net N02309
+Adding net N02293
+Adding net N02327
+Adding net N02584
+Adding net N02969
+Adding net 5V
+Adding net N06175
+Adding net N06334
+Adding net N06645
+Adding net N07503
+Adding net N001645
+Adding net N06477
+Adding net N09559
+Adding net GND
+Adding net 3V3
+Adding net VIN
+Adding net REF
+Adding net +5V
+Deleting net DEFAULT
+*EOF*
+No errors found

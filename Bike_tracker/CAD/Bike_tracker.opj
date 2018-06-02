@@ -1,0 +1,96 @@
+(ExpressProject "Bike_tracker"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\bike_tracker.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\bike_tracker.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DRC_Scope "0")
+    (DRC_Action "1")
+    (DRC_Create_Warnings "TRUE")
+    (DRC_Check_Ports "TRUE")
+    (DRC_Check_Off-Page_Connectors "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Report_Ports_and_Off-page_Connectors "TRUE")
+    (DRC_SDT_Compatibility "TRUE")
+    (DRC_Report_Off-grid_Objects "TRUE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_for_Misleading_TAP "TRUE")
+    (DRC_Visible_Power_pins "TRUE")
+    (DRC_Report_Netnames "TRUE")
+    (DRC_View_Output "TRUE")
+    (DRC_Report_File
+       "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.DRC")
+    (Netlist_TAB "3")
+    (LAYOUT_Netlist_File "BIKE_TRACKER.MNL")
+    (LAYOUT_PCB_Footprint "{PCB Footprint}")
+    (FALSE)
+    (LAYOUT_Units "0")
+    (FALSE))
+  (Folder "Outputs"
+    (File ".\bike_tracker.drc"
+      (Type "Report"))
+    (File ".\bike_tracker.mnl"
+      (Type "LAYOUT Netlist File")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (DHT11
+      (FullPartName "DHT11.Normal")
+      (LibraryName
+         "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("SD Card"
+      (FullPartName "SD Card.Normal")
+      (LibraryName
+         "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.OLB")
+      (DeviceIndex "0"))
+    ("MPU 9265"
+      (FullPartName "MPU 9265.Normal")
+      (LibraryName
+         "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.OLB")
+      (DeviceIndex "0"))
+    (GPS
+      (FullPartName "GPS.Normal")
+      (LibraryName
+         "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.OLB")
+      (DeviceIndex "0"))
+    ("Arduino nano"
+      (FullPartName "Arduino nano.Normal")
+      (LibraryName
+         "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\Rumen\Documents\11thGrade\CA\Bike_tracker\CAD")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 401"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 0 616 -8 -30 122 1288 93 536")
+        (Scroll "75 353")
+        (Zoom "188")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.DSN")
+      (Schematic "SCHEMATIC")
+      (Page "PAGE1")))
+  (MPSSessionName "Rumen"))
