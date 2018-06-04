@@ -3,11 +3,15 @@
 #include <SoftwareSerial.h>
 #include <Wire.h>
 #include <TimerOne.h>
+#include <dht.h>
+
+dht DHT;
 
 SoftwareSerial ss(2, 3); // Used by GPS
 
 File GPS; //File to write NEMA data
 File GYRO; //File to write gyro data
+File temp_file; //File to write temperature and humidity data
 
 //Pins used
 int SD_CS = 4;
@@ -18,8 +22,9 @@ int GPS_RX = 3;
 int GPS_TX = 2;
 int GYRO_SDA = A4;
 int GYRO_SCL = A5;
-int GAS = A6;
-int TEMP = A7;
+int GAS = 9;
+int DHT_PIN = 8;
+
 
 //Used by MPU9250
 #define  MPU9250_ADDRESS           0x68
@@ -110,6 +115,10 @@ void setup() {
   if (SD.exists("GYRO.txt")) {
     SD.remove("GYRO.txt");
   }
+
+  // MQ-3 and DHT11 pin initialization
+  pinMode(GAS, INPUT);
+  pinMode(TEMP, INPUT);
 }
 
 // Counter Used by MPU9250
@@ -122,6 +131,7 @@ void callback()
 
 
 void loop() {
+  if(digitalRead(GAS)) while(1);
   // Create and append GPS data to a file
   GPS = SD.open("GPS.ubx", FILE_WRITE);
   // The .ubx file needs to be opened in u-center and exported as .kml file to be read from Google Earth.
@@ -131,8 +141,8 @@ void loop() {
     }
     GPS.close();
   }
-  
-  //Create and append Gyro data to a file
+  tempRead();
+  // Create and append Gyro data to a file
   gyro();
 }
 
@@ -214,6 +224,23 @@ void gyro()
   
   GYRO.println("");
   GYRO.close();
+  //delay(100);
+}
+
+void tempRead()
+{
+  int chk = DHT.read(DHT_PIN);
+  temp_file = SD.open("Temp.txt", FILE_WRITE);
+  temp_file.print(millis()-ti,DEC);
+  temp_file.print("\t"); 
+  temp_file.print("Temperature: ");
+  temp_file.print(DHT.tempetarute);
+  temp_file.print("C");
+  temp_file.print("\t");
+  temp_file.print("Humidity: ");
+  temp_file.print(DHT.humidity);
+  temp_file.println("%");
+  temp_file.close();
   //delay(100);
 }
 // Amin!
