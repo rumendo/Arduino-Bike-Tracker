@@ -32,7 +32,8 @@
     (LAYOUT_PCB_Footprint "{PCB Footprint}")
     (FALSE)
     (LAYOUT_Units "0")
-    (FALSE))
+    (FALSE)
+    ( "FALSE"))
   (Folder "Outputs"
     (File ".\bike_tracker.drc"
       (Type "Report"))
@@ -40,6 +41,11 @@
       (Type "LAYOUT Netlist File")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (MQ-3
+      (FullPartName "MQ-3.Normal")
+      (LibraryName
+         "C:\USERS\RUMEN\DOCUMENTS\11THGRADE\CA\BIKE_TRACKER\CAD\BIKE_TRACKER.OLB")
+      (DeviceIndex "0"))
     (DHT11
       (FullPartName "DHT11.Normal")
       (LibraryName
@@ -75,7 +81,11 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources" "Library")
-      (Path "Outputs"))
+      (Path "Design Resources" "Library"
+         "C:\Users\Rumen\Documents\11thGrade\CA\Bike_tracker\CAD\bike_tracker.olb")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Rumen\Documents\11thGrade\CA\Bike_tracker\CAD\bike_tracker.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -85,8 +95,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 0 616 -8 -30 122 1288 93 536")
-        (Scroll "75 353")
+        (Placement "44 0 1 0 616 -8 -30 252 1418 89 532")
+        (Scroll "49 444")
         (Zoom "188")
         (Occurrence "/"))
       (Path
