@@ -22,8 +22,8 @@ int GPS_RX = 3;
 int GPS_TX = 2;
 int GYRO_SDA = A4;
 int GYRO_SCL = A5;
-int GAS = 9;
-int DHT_PIN = 8;
+int GAS = 8;
+int DHT_PIN = 9;
 
 
 //Used by MPU9250
